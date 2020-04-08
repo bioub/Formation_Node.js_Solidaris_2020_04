@@ -1,3 +1,5 @@
+'use strict';
+
 const random = {
   get: function () {
     return Math.random();
