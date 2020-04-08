@@ -1,8 +1,7 @@
 'use strict';
 
-// importer random ici depuis random.js
-
-const readline = require('readline');
+const random = require('./random'); // fichier local
+const readline = require('readline'); // fichier dans le binaire de Node.js
 
 class Jeu {
   constructor(options = {}) {
@@ -51,3 +50,4 @@ class Jeu {
 }
 
 // exporter la classe jeu ici
+module.exports = Jeu;

@@ -13,3 +13,5 @@ function getRandomIntInclusive(min, max) {
 // exporter les fonctions ici
 // getRandom sous le nom get
 // getRandomIntInclusive sous le nom getIntInclusive
+exports.get = getRandom;
+exports.getIntInclusive = getRandomIntInclusive;
