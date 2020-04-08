@@ -35,7 +35,7 @@ for (var i = 0; i < 3; i++) {
 // 3 3 3 (10000ms)
 
 // avec closure: 0 1 2 dans 1s
-for (var i = 0; i < 3; i++) {
+for (var i = 0; i < 4; i++) {
   setTimeout(externe(i), 1000);
 }
 

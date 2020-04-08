@@ -25,6 +25,10 @@ console.log(Math.sum);
 
 // 2 façon de créer un objet
 // directement (object literal)
+const MyMath = {
+  sum: (a, b) => a + b,
+};
+
 const coords = {
   x: 1,
   y: 2,
@@ -84,6 +88,12 @@ Coords.prototype.infos = function () {
 */
 
 const coords1 = new Coords(1, 2);
+console.log(coords1.x);
 console.log(coords1.infos());
+console.log(coords1.hasOwnProperty('x')); // true
+console.log(coords1.hasOwnProperty('infos')); // false
+console.log(typeof coords1.x !== undefined); // true
+console.log(typeof coords1.infos !== undefined); // true
+
 
 console.log(typeof Coords); // function

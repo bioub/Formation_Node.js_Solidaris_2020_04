@@ -42,3 +42,10 @@ const rl = readline.createInterface({
 const entierAlea = getRandomIntInclusive(0, 100);
 const essais = [];
 jouer();
+
+// ^
+// |                             question
+// |question                     jouer
+// |jouer    .....               =>       .....
+// 0-----------------------------ENTREE------------------ENTREE--->
+//
