@@ -30,12 +30,19 @@ console.log(multiply(...nbs));
 // Pour un cloner un tableau
 const cloneNbs = [...nbs, 5];
 
+// const clonesNbs = nbs.slice()
+// clonesNbs.push(5);
+
 // Destructurer un tableau en JS (PHP fonction list())
 // const un = nbs[0];
 // const deux = nbs[1];
 //    [1     , 2   , 3, 4]
 const [un = 1, deux, ...troisEtQuatre] = nbs;
 console.log(un, deux, troisEtQuatre); // 1 2 [3, 4]
+
+const nomComplet = 'Romain Bohdanowicz';
+
+const [prenom, nom] = nomComplet.split(' ');
 
 // Créer une clé à partir d'une variable du même nom
 // Shortand property

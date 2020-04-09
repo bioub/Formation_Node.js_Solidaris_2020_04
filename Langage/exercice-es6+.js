@@ -16,10 +16,6 @@ const readline = require('readline');
 class Jeu {
   constructor(options = {}) {
     const { min = 0, max = 100 } = options;
-    // const min = options.min || 0;
-    // const max = options.max !== undefined ? options.max : 100;
-    // ES2020 : Nullish Coalescing Operator
-    // const max = options.max ?? 100;
 
     this._rl = readline.createInterface({
       input: process.stdin,
@@ -34,9 +30,9 @@ class Jeu {
     }
 
     this._rl.question('Quel est le nombre ? ', (answer) => {
-      const entierSaisi = parseInt(answer);
+      const entierSaisi = Number.parseInt(answer);
 
-      if (isNaN(entierSaisi)) {
+      if (Number.isNaN(entierSaisi)) {
         console.log('Erreur : il faut saisir un entier');
         return this.jouer();
       }

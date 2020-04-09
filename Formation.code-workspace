@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "API-Node"
+		},
+		{
+			"path": "Exercice-Build"
 		}
 	],
 	"settings": {}
