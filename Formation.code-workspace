@@ -11,6 +11,12 @@
 		},
 		{
 			"path": "Exercice-Build"
+		},
+		{
+			"path": "Express-REST"
+		},
+		{
+			"path": "nest-rest"
 		}
 	],
 	"settings": {}
