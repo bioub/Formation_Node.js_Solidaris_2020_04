@@ -12,3 +12,5 @@ const ws = fs.createWriteStream('./package.json.zip');
 
 rs.pipe(gzip).pipe(ws);
 // cat package.json | gzip > ./package.json.copy
+
+// Gulp

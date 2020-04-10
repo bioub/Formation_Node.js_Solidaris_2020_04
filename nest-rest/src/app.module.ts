@@ -7,13 +7,6 @@ import { UserService } from './user.service';
 @Module({
   imports: [],
   controllers: [AppController, UsersController],
-  providers: [{
-    provide: AppService,
-    useValue: {
-      getHello() {
-        return 'Hello from provide'
-      }
-    }
-  }, UserService],
+  providers: [AppService, UserService],
 })
 export class AppModule {}

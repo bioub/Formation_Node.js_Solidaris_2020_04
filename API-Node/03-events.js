@@ -3,6 +3,8 @@ const { EventEmitter } = require('events');
 class UserService extends EventEmitter {
   create(user) {
     // insertion DB
+    // setTimeout
+    // setImmediate
     process.nextTick(() => {
       this.emit('user.created', user);
     });
