@@ -1,11 +1,15 @@
 import { Controller, Get, Request, Param } from '@nestjs/common';
 import { AppService } from './app.service';
 import { Request as IRequest } from 'express';
+import { UserService } from './users/user.service';
 
 @Controller('/api/app')
 export class AppController {
   // Injection de dépendance
-  constructor(private readonly appService: AppService) {}
+  constructor(
+    private readonly appService: AppService,
+    private readonly userService: UserService,
+  ) {}
 
   @Get()
   getHello() {
@@ -18,7 +22,7 @@ export class AppController {
   }
 
   @Get('/coucou/:name')
-  coucou(@Param('name') name) {
+  coucou(@Param('name') name: any) {
     return { msg: 'Coucou ' + name };
   }
 }
